@@ -53,6 +53,11 @@ RUN pwd
 
 COPY html-files /var/www/html
 
+RUN chmod -R 777 /var/www/html && \
+    rm -f /run/httpd.pid
+
+USER 27
+
 #ENTRYPOINT ["/bin/bash"]
 #CMD [""]
 
