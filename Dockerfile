@@ -1,4 +1,4 @@
-FROM ubi8/ubi
+FROM registry.redhat.io/ubi8/ubi
 LABEL name Test
 MAINTAINER Sven L. sven@bla
 
